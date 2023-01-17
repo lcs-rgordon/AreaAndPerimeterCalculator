@@ -23,8 +23,9 @@ struct RectangleView: View {
     
     // Shows our user interface
     var body: some View {
+
         VStack {
-            
+
             HStack {
                 Image("Rectangle")
                     .resizable()
@@ -40,7 +41,7 @@ struct RectangleView: View {
                 .bold()
             
             // Slider to control length
-            Slider(value: Binding.constant(length),
+            Slider(value: $length,
                    in: 0...100,
                    label: { Text("Length") },
                    minimumValueLabel: { Text("0") },
@@ -55,7 +56,7 @@ struct RectangleView: View {
                 .bold()
 
             // Slider to control width
-            Slider(value: Binding.constant(width),
+            Slider(value: $width,
                    in: 0...100,
                    label: { Text("Width") },
                    minimumValueLabel: { Text("0") },
@@ -75,8 +76,9 @@ struct RectangleView: View {
             
             
             Spacer()
-            
+
         }
+        
     }
 }
 
