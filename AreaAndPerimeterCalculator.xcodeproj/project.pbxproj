@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		81715EFB2977059500D4B83B /* AreaAndPerimeterCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81715EFA2977059500D4B83B /* AreaAndPerimeterCalculatorApp.swift */; };
-		81715EFD2977059500D4B83B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81715EFC2977059500D4B83B /* ContentView.swift */; };
 		81715EFF2977059700D4B83B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81715EFE2977059700D4B83B /* Assets.xcassets */; };
 		81715F022977059700D4B83B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81715F012977059700D4B83B /* Preview Assets.xcassets */; };
+		81715F0A2977064B00D4B83B /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81715F092977064B00D4B83B /* RectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81715EF72977059500D4B83B /* AreaAndPerimeterCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AreaAndPerimeterCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81715EFA2977059500D4B83B /* AreaAndPerimeterCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAndPerimeterCalculatorApp.swift; sourceTree = "<group>"; };
-		81715EFC2977059500D4B83B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81715EFE2977059700D4B83B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81715F012977059700D4B83B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81715F092977064B00D4B83B /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				81715EFA2977059500D4B83B /* AreaAndPerimeterCalculatorApp.swift */,
-				81715EFC2977059500D4B83B /* ContentView.swift */,
+				81715F08297705CE00D4B83B /* Views */,
 				81715EFE2977059700D4B83B /* Assets.xcassets */,
 				81715F002977059700D4B83B /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				81715F012977059700D4B83B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81715F08297705CE00D4B83B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81715F092977064B00D4B83B /* RectangleView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81715EFD2977059500D4B83B /* ContentView.swift in Sources */,
+				81715F0A2977064B00D4B83B /* RectangleView.swift in Sources */,
 				81715EFB2977059500D4B83B /* AreaAndPerimeterCalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
