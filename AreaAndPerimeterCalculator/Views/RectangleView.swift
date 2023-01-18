@@ -35,45 +35,68 @@ struct RectangleView: View {
                 Spacer()
             }
             
-            // Length
-            Text("Length")
-                .font(.title2)
-                .bold()
+            Group {
+                
+                // Length
+                Text("Length")
+                    .font(.title2)
+                    .bold()
+                
+                // Slider to control length
+                Slider(value: $length,
+                       in: 0...100,
+                       label: { Text("Length") },
+                       minimumValueLabel: { Text("0") },
+                       maximumValueLabel: { Text("100") })
+                
+                // Use string interpolation \() to display length
+                Text("\(length)")
+
+            }
             
-            // Slider to control length
-            Slider(value: $length,
-                   in: 0...100,
-                   label: { Text("Length") },
-                   minimumValueLabel: { Text("0") },
-                   maximumValueLabel: { Text("100") })
+            Group {
+                
+                // Width
+                Text("Width")
+                    .font(.title2)
+                    .bold()
+
+                // Slider to control width
+                Slider(value: $width,
+                       in: 0...100,
+                       label: { Text("Width") },
+                       minimumValueLabel: { Text("0") },
+                       maximumValueLabel: { Text("100") })
+
+                
+                // Use string interpolation \() to display width
+                Text("\(width)")
+
+            }
             
-            // Use string interpolation \() to display length
-            Text("\(length)")
+            Group {
+                
+                // Area
+                Text("Area")
+                    .font(.title2)
+                    .bold()
+                // Use string interpolation \() to display area
+                Text("\(area)")
 
-            // Width
-            Text("Width")
-                .font(.title2)
-                .bold()
+            }
 
-            // Slider to control width
-            Slider(value: $width,
-                   in: 0...100,
-                   label: { Text("Width") },
-                   minimumValueLabel: { Text("0") },
-                   maximumValueLabel: { Text("100") })
+            Group {
+                
+                // Label for perimeter
+                Text("Perimeter")
+                    .font(.title2)
+                    .bold()
 
-            
-            // Use string interpolation \() to display width
-            Text("\(width)")
+                // Use string interpolation \() to display perimeter
+                Text("\(area)")
 
-            // Area
-            Text("Area")
-                .font(.title2)
-                .bold()
-            // Use string interpolation \() to display area
-            Text("\(area)")
+            }
 
-            
             
             Spacer()
 
